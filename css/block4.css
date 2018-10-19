@@ -1,0 +1,108 @@
+.block4 {
+  display: grid;
+  grid-area: block4;
+  grid-template-areas: " block4_left block4_body . ";
+  grid-template-columns: 200px 1200px 280px;
+  grid-template-rows: 1fr;
+  background-image: url("/images/colabg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  justify-content: center; }
+
+.block4_left {
+  grid-area: block4_left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.block4_left_foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end; }
+  .block4_left_foto img {
+    height: 600px;
+    width: auto; }
+
+#cola_logo {
+  position: absolute;
+  bottom: 60px;
+  right: 60px; }
+  #cola_logo img {
+    width: 200px;
+    height: auto; }
+
+.block4_body {
+  grid-area: block4_body;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.block4_body_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  align-self: center; }
+  .block4_body_title img {
+    width: 300px; }
+
+.block4_body_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  font-size: 22px;
+  line-height: 1.3;
+  padding-bottom: 100px;
+  align-self: center; }
+
+@media screen and (max-width: 1650px) {
+  #cola_logo {
+    position: relative;
+    display: none; } }
+
+@media screen and (max-width: 1450px) {
+  .block4 {
+    display: grid;
+    grid-area: block4;
+    grid-template-areas: " block4_left block4_body ";
+    grid-template-columns: 200px 1000px; } }
+
+@media screen and (max-width: 1150px) {
+  .block4 {
+    display: grid;
+    grid-area: block4;
+    grid-template-areas: " block4_left block4_body ";
+    grid-template-columns: 200px 800px; } }
+
+@media screen and (max-width: 900px) {
+  .block4 {
+    display: grid;
+    grid-area: block4;
+    grid-template-areas: " block4_left block4_body ";
+    grid-template-columns: 100px 1fr; }
+  .block4_left {
+    position: relative;
+    left: -100px;
+    bottom: 0; } }
+
+@media screen and (max-width: 900px) {
+  .block4_body_text {
+    font-size: 16px; } }
+
+@media screen and (max-width: 600px) {
+  .block4 {
+    display: grid;
+    grid-area: block4;
+    grid-template-areas: ". block4_body . ";
+    grid-template-columns: 8px 1fr 8px; }
+  .block4_left {
+    display: none; } }

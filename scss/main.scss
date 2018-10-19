@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+   /* background-image: url("/images/bg/bg_body.png");
+    background-position: center;
+    background-size: cover;*/
+    background: #ffffff;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ ul, body {
+    padding: 0;
+    margin: 0; }
+
+    @font-face {
+      
+    font-family: "Circe-Bold"; 
+    src: url("../ttf/Circe-Bold.ttf") format("truetype"); 
+    }
+
+
+
+$white: #fff;
+
+
+.body_pages{
+    position: relative;
+    display: grid;
+    /*grid-template-areas: ". header . "
+    " . block4 . "
+    " . footer . ";
+    //grid-template-columns: minmax(10px, 1fr) 1200px minmax(10px, 1fr);
+    /*grid-template-rows: 1fr  1fr  1fr  1fr 1fr ;*/
+    //grid-template-columns: 1080px minmax(10px, 1fr);*/
+    overflow: hidden;
+    grid-template-areas: 
+    " nav nav nav "
+    " . header . "
+    " block1 block1 block1 "
+    " block2 block2 block2 "    
+    "block3 block3 block3"
+    " block4 block4 block4 "
+    "block6 block6 block6"
+    "block7 block7 block7"
+    "block8 block8 block8"
+    "block9 block9 block9"
+    "  footer footer footer "
+
+
+    ;
+    grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
+    -webkit-box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+}
+#top{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: #79897a;
+    border-radius: 5px;
+    transition: all 0.7s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+    img{
+        width: 35px;
+        height: 25px;
+    }
+    opacity: 0;
+}
+input {
+    outline:none;
+}
+a {
+    outline:none;
+}
+@import "nav.scss";
+@import "header.scss";
+@import "block1.scss";
+@import "block3.scss";
+@import "block4.scss";
+@import "block2.scss";
+@import "block6.scss";
+@import "block7.scss";
+@import "block8.scss";
+@import "block9.scss";
+@import "footer.scss";
+
+
+
+
+
+
+@media screen and (max-width:1100px){
+    .body_pages{
+        display: grid;
+        grid-template-areas:
+        " nav nav nav "
+        " . header . "
+        " block1 block1 block1 "
+        " block2 block2 block2 "    
+        "block3 block3 block3"
+        " block4 block4 block4 "
+        "block6 block6 block6"
+        "block7 block7 block7"
+        "block8 block8 block8"
+        "block9 block9 block9"
+        "  footer footer footer "
+    
+
+    
+        ;
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
+    }
+}

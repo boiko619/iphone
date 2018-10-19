@@ -1,0 +1,143 @@
+.block2{
+    grid-area: block2;
+    display: grid;
+    grid-template-areas:"block2_title block2_title" 
+    "block2_left block2_right";
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 230px 1fr;
+  
+        overflow: hidden;
+
+}
+.block2_left{
+    grid-area: block2_left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 44px;
+    margin-right: 40px;
+
+}
+.block2_left_foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.block2_right{
+    grid-area: block2_right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 40px 0; 
+    margin-right: 40px;
+
+
+}
+
+.block2_right_body{
+    display: grid;
+    grid-template-areas: 
+    "block2_right_text";
+}
+.block2_title{
+    grid-area: block2_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    h2{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    img{
+        width: 350px;
+        
+    }
+    padding: 60px;
+}
+.block2_right_text{
+    grid-area: block2_right_text;
+    p{
+        font-size: 22px;
+
+    }
+}
+.block2_right_article_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    h3{
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+}
+.block2_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 40px;
+    margin: 10px 0;
+}
+.block2_right_article_ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.block2_right_article_li{
+    list-style: disc;
+    margin: 3px 0;
+}
+@media screen and (max-width:1500px){
+    .block2{
+        display: grid;
+        grid-template-areas:"block2_title" 
+        "block2_right"
+        "block2_left" ;
+        grid-template-columns: 1fr;
+        grid-template-rows:200px 1fr 450px;
+    }
+    .block2_left{
+        justify-content: center;
+        align-items: center;    
+    }
+    .block2_right{
+        padding: 40px 10%; 
+
+    }
+}
+@media screen and (max-width:800px){
+    .block2_left_foto{
+
+        img{
+            min-width: 250px;
+            min-height: auto;
+            max-width: 100%;
+        }
+    }
+    .block2_right_text{
+     
+        p{
+            font-size: 16px;
+    
+        }
+    }
+    .block2_right{
+    padding: 5px;
+    margin: 0; 
+
+}
+.block2_title{
+    img{
+        min-width: 220px;
+        min-height: auto;
+        max-width: 100%;
+    }
+}
+}
+@media screen and (max-width:800px){
+
+}

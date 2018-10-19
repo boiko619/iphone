@@ -1,0 +1,128 @@
+.block6 {
+  grid-area: block6;
+  display: grid;
+  grid-template-areas: ". block6_block .";
+  grid-template-columns: 1fr 1200px 1fr;
+  padding-top: 80px; }
+
+.block6_block {
+  grid-area: block6_block;
+  display: grid;
+  grid-template-areas: "block6_title" "block6_body";
+  /*0    img{
+        display: block;
+        max-width: 100%;
+    }*/ }
+
+.block6_title {
+  grid-area: block6_title;
+  font-size: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: 'Lora', serif; }
+
+.block6_body {
+  grid-area: block6_body;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+/*
+.block6_graf{
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.block6_graf_media{
+    img{
+        width: 100%;
+        height: auto;
+        min-width: 700px;
+    }
+}
+.step{
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px; 
+    } 
+    p{
+        text-align: center;
+        margin-right: 5px;
+        font-size: 19px;
+        font-weight: 0.9;
+    }
+}
+.step1{
+    left: 272px;
+    top: 155px;
+    p{
+        padding-top: 20px;
+    }
+}
+.step2{
+    left: 346px;
+    bottom: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    p{
+    padding-bottom: 20px;}
+
+}
+.step3{
+    left: 550px;
+    top: 105px;
+    p{
+        padding-top: 20px;
+    }
+    
+}
+.step4{
+    left: 685px;
+    bottom: 45px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    p{
+        padding-bottom: 20px;
+    }
+}
+.block6_icon{
+    display: flex;
+    flex-direction: column;
+
+}*/
+#block6_title {
+  position: relative;
+  transition: all 1.2s; }
+
+@media screen and (max-width: 1250px) {
+  .block6 {
+    grid-area: block6;
+    display: grid;
+    grid-template-areas: ". block6_block .";
+    grid-template-columns: 10px 1fr 10px;
+    padding-top: 80px; } }
+
+@media screen and (max-width: 760px) {
+  .block6_title {
+    font-size: 28px; } }
+
+@media screen and (max-width: 660px) {
+  .block6_body img {
+    width: 290px;
+    height: 100%; } }

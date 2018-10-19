@@ -1,0 +1,109 @@
+.block7{
+    grid-area: block7;
+    display: grid;
+    grid-template-areas: ". block7_body .";
+    grid-template-columns: 1fr 1000px 1fr;
+    margin: 40px 0; 
+    
+}
+.block7_body{
+    grid-area: block7_body;
+}
+.block7_section{
+    grid-area: block7_section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block7_article{
+    align-self: center;
+    display: grid;
+    grid-template-areas: "block7_article_left block7_article_right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    margin-bottom: 40px;   
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+
+}
+.block7_article_rev{
+    align-self: center;
+    display: grid;
+    grid-template-areas: "block7_article_right block7_article_left ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    margin-bottom: 40px;   
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+
+}
+.block7_article_4{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.block7_article_left{
+    grid-area: block7_article_left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 386px;
+        height: 229px;
+    }
+}
+.block7_article_right{
+    display: grid;
+    grid-area: block7_article_right;
+    grid-template-areas: "block7_article_right_title"
+     "block7_article_right_text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px;
+    margin-bottom: 40px;  
+}
+.block7_article_right_title{
+    grid-area: block7_article_right_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+.block7_article_right_text{
+    grid-area: block7_article_right_text;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1050px){
+    .block7{
+        grid-template-areas: ". block7_body .";
+        grid-template-columns: 10px 1fr 10px;
+    }
+    .block7_article{
+        align-self: center;
+        display: grid;
+        grid-template-areas: "block7_article_left" 
+        "block7_article_right";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+
+    
+    }
+    .block7_article_rev{
+        grid-template-areas: "block7_article_left" 
+        "block7_article_right";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media screen and (max-width:650px){
+    .block7_article_left{
+
+        img{
+            width: 310px;
+            height: 184px;
+        }
+    }
+}

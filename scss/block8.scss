@@ -1,0 +1,99 @@
+.block8{
+    grid-area: block8;
+    display: grid;
+    grid-template-areas: 
+
+    " . block8_body .";
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: 650px;
+    background: #FFC68E;
+    /*background-image: url("/images/world.png");
+    background-size: cover;
+    background-position: center center;*/
+}
+.block8_body{
+    grid-area: block8_body;
+    background-image: url("/images/world.png");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-areas: "block8_title"
+    "block8_info";
+    //grid-template-rows: 2fr  4fr;
+    //flex-direction: column;
+    //justify-content: flex-start;
+}
+.block8_title{
+    grid-area: block8_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-top: 60px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.block8_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-top: 35px;
+
+
+}
+.block8_info{
+    grid-area: block8_info;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-top: 120px;
+
+
+}
+.block8_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+
+}
+.block8_li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    img{
+        width: 120px;
+        height: auto;
+        padding: 15px;
+        border: double 1px  black;
+        border-radius: 50%;
+        align-self: center;
+      
+
+    }
+    P{
+        align-self: center;
+         padding-top: 20px;
+         text-align: center;
+
+    }
+}
+@media screen and (max-width:1150px){
+
+    .block8{
+        grid-template-columns: 5px 1fr 5px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .block8{
+        grid-template-rows: 1fr;
+
+    }
+}
